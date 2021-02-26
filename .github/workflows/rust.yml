@@ -1,0 +1,22 @@
+name: Rust to Github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        uses: ./.github/actions/build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # ssh-keygen -t rsa -b 4096 -f gh-pages >> gh-pages.pub in deploy keys, gh-pages in secrets
+          deploy_key: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
+          external_repository: jiyuujin/esahack
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./book

@@ -1,0 +1,6 @@
+[book]
+title = "esahack"
+src = "src"
+authors = ["jiyuujin"]
+multilingual = false
+language = "en"
