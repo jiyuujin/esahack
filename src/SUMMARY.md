@@ -1,7 +1,9 @@
 # esahack
 
 - [Environment](env.md)
-  - [Node.js Setup](nodenv.md)
+  - [Node.js Setup](nodejs.md)
+    - [nodenv Setup](nodenv.md)
+    - [nodebrew Setup](nodebrew.md)
   - [PHP Setup](phpenv.md)
   - [Python Setup](pyenv.md)
 - [Front](front.md)

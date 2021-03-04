@@ -4,37 +4,27 @@ Forked in Node.js `1.x` to `3.x`, but has been released since `4.x`
 
 [https://nodejs.org/ja/download/releases/](https://nodejs.org/ja/download/releases/)
 
-## Set `nodenv`
+## Set `nodebrew`
 
 Recognize `.node-version` file
 
 ```bash
-git clone https://github.com/nodenv/nodenv.git ~/.nodenv
-git clone https://github.com/nodenv/node-build.git $(nodenv root)/plugins/node-build
-cd ~/.nodenv && src/configure && make -C src
+brew install nodebrew
 ```
 
-Set the config at `.zshrc`
+Set the config at `.bash_profile`
 
 ```bash
-sudo vi ~/.zshrc
-
-# ~/.zshrc
-export PATH="$HOME/.nodenv/bin:$PATH" >> ~/.bash_profile
-
-eval "$(nodenv init -)" >> ~/.bash_profile
-
-source ~/.zshrc
+curl -L git.io/nodebrew | perl - setup
+source ~/.bash_profile
 ```
 
 After setting, quit the terminal session
 
 ```bash
-nodenv install -l
-nodenv install 10.14.2
-nodenv global 10.14.2
-nodenv rehash
-node -v
+nodebrew list
+nodebrew install-binary latest
+nodebrew use v9.11.1
 ```
 
 You can confirm the versions of node.js
