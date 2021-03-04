@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>nodenv Setup - esahack</title>
+        <title>Node.js Setup - esahack</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="env.html"><strong aria-hidden="true">1.</strong> Environment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="nodejs.html"><strong aria-hidden="true">1.1.</strong> Node.js Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="nodenv.html" class="active"><strong aria-hidden="true">1.1.1.</strong> nodenv Setup</a></li><li class="chapter-item expanded "><a href="nodebrew.html"><strong aria-hidden="true">1.1.2.</strong> nodebrew Setup</a></li></ol></li><li class="chapter-item expanded "><a href="phpenv.html"><strong aria-hidden="true">1.2.</strong> PHP Setup</a></li><li class="chapter-item expanded "><a href="pyenv.html"><strong aria-hidden="true">1.3.</strong> Python Setup</a></li></ol></li><li class="chapter-item expanded "><a href="front.html"><strong aria-hidden="true">2.</strong> Front</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="build.html"><strong aria-hidden="true">2.1.</strong> Build</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="babel.html"><strong aria-hidden="true">2.1.1.</strong> Babel usage</a></li><li class="chapter-item expanded "><a href="webpack.html"><strong aria-hidden="true">2.1.2.</strong> Webpack usage</a></li><li class="chapter-item expanded "><a href="parcel.html"><strong aria-hidden="true">2.1.3.</strong> Parcel usage</a></li><li class="chapter-item expanded "><a href="rollup.html"><strong aria-hidden="true">2.1.4.</strong> Rollup usage</a></li></ol></li><li class="chapter-item expanded "><a href="frameworks.html"><strong aria-hidden="true">2.2.</strong> Frameworks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="vue.html"><strong aria-hidden="true">2.2.1.</strong> Vue usage</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="products.html"><strong aria-hidden="true">3.</strong> Products</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="profile.html"><strong aria-hidden="true">3.1.</strong> Yuma Kitamura - Web Developer</a></li><li class="chapter-item expanded "><a href="techhub.html"><strong aria-hidden="true">3.2.</strong> nekohack Tech Hub</a></li><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">3.3.</strong> Web猫ブログ</a></li><li class="chapter-item expanded "><a href="insight.html"><strong aria-hidden="true">3.4.</strong> Insight</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="env.html"><strong aria-hidden="true">1.</strong> Environment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="nodejs.html" class="active"><strong aria-hidden="true">1.1.</strong> Node.js Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="nodenv.html"><strong aria-hidden="true">1.1.1.</strong> nodenv Setup</a></li><li class="chapter-item expanded "><a href="nodebrew.html"><strong aria-hidden="true">1.1.2.</strong> nodebrew Setup</a></li></ol></li><li class="chapter-item expanded "><a href="phpenv.html"><strong aria-hidden="true">1.2.</strong> PHP Setup</a></li><li class="chapter-item expanded "><a href="pyenv.html"><strong aria-hidden="true">1.3.</strong> Python Setup</a></li></ol></li><li class="chapter-item expanded "><a href="front.html"><strong aria-hidden="true">2.</strong> Front</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="build.html"><strong aria-hidden="true">2.1.</strong> Build</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="babel.html"><strong aria-hidden="true">2.1.1.</strong> Babel usage</a></li><li class="chapter-item expanded "><a href="webpack.html"><strong aria-hidden="true">2.1.2.</strong> Webpack usage</a></li><li class="chapter-item expanded "><a href="parcel.html"><strong aria-hidden="true">2.1.3.</strong> Parcel usage</a></li><li class="chapter-item expanded "><a href="rollup.html"><strong aria-hidden="true">2.1.4.</strong> Rollup usage</a></li></ol></li><li class="chapter-item expanded "><a href="frameworks.html"><strong aria-hidden="true">2.2.</strong> Frameworks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="vue.html"><strong aria-hidden="true">2.2.1.</strong> Vue usage</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="products.html"><strong aria-hidden="true">3.</strong> Products</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="profile.html"><strong aria-hidden="true">3.1.</strong> Yuma Kitamura - Web Developer</a></li><li class="chapter-item expanded "><a href="techhub.html"><strong aria-hidden="true">3.2.</strong> nekohack Tech Hub</a></li><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">3.3.</strong> Web猫ブログ</a></li><li class="chapter-item expanded "><a href="insight.html"><strong aria-hidden="true">3.4.</strong> Insight</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -135,48 +135,39 @@
                         <h1><a class="header" href="#nodejs-setup" id="nodejs-setup">Node.js Setup</a></h1>
 <p>Forked in Node.js <code>1.x</code> to <code>3.x</code>, but has been released since <code>4.x</code></p>
 <p><a href="https://nodejs.org/ja/download/releases/">https://nodejs.org/ja/download/releases/</a></p>
-<h2><a class="header" href="#set-nodenv" id="set-nodenv">Set <code>nodenv</code></a></h2>
-<p>Recognize <code>.node-version</code> file</p>
-<pre><code class="language-bash">git clone https://github.com/nodenv/nodenv.git ~/.nodenv
-git clone https://github.com/nodenv/node-build.git $(nodenv root)/plugins/node-build
-cd ~/.nodenv &amp;&amp; src/configure &amp;&amp; make -C src
-</code></pre>
-<p>Set the config at <code>.zshrc</code></p>
-<pre><code class="language-bash">sudo vi ~/.zshrc
+<h2><a class="header" href="#run-javascript-simplify" id="run-javascript-simplify">Run JavaScript simplify</a></h2>
+<p>You create <code>src/main.js</code>.</p>
+<pre><code class="language-js">const main = () =&gt; {
+    console.log('It is JavaScript!!');
+};
 
-# ~/.zshrc
-export PATH=&quot;$HOME/.nodenv/bin:$PATH&quot; &gt;&gt; ~/.bash_profile
+main();
+</code></pre>
+<p>You can confirm the log <code>It is JavaScript!!</code>, it's OK!!</p>
+<pre><code class="language-bash">node src/main.js
 
-eval &quot;$(nodenv init -)&quot; &gt;&gt; ~/.bash_profile
+It is JavaScript!!
+</code></pre>
+<h2><a class="header" href="#run-typescript-simplify" id="run-typescript-simplify">Run TypeScript simplify</a></h2>
+<p>Install <code>ts-node</code> plugin.</p>
+<pre><code class="language-bash">npm i -D ts-node typescript
 
-source ~/.zshrc
+yarn add ts-node typescript -D
 </code></pre>
-<p>After setting, quit the terminal session</p>
-<pre><code class="language-bash">nodenv install -l
-nodenv install 10.14.2
-nodenv global 10.14.2
-nodenv rehash
-node -v
+<p>You create <code>tsconfig.json</code>.</p>
+<pre><code class="language-bash">./node_modules/.bin/tsc --init
 </code></pre>
-<p>You can confirm the versions of node.js</p>
-<h3><a class="header" href="#use-npm" id="use-npm">Use <code>npm</code></a></h3>
-<p>You can confirm the version of <code>npm</code></p>
-<pre><code class="language-bash">npm -v
+<p>Additionally you create <code>src/main.ts</code>, check tyoe definition by run <code>./node_modules/.bin/tsc --noEmit</code>.</p>
+<pre><code class="language-ts">const main = () =&gt; {
+    console.log('It is TypeScript!!');
+};
+
+main();
 </code></pre>
-<h3><a class="header" href="#use-yarn" id="use-yarn">Use <code>yarn</code></a></h3>
-<p>Install <code>yarn</code>, you can confirm the version of <code>yarn</code></p>
-<pre><code class="language-bash">npm i -g yarn
-yarn -v
-</code></pre>
-<h4><a class="header" href="#use-yarn-link" id="use-yarn-link">Use <code>yarn link</code></a></h4>
-<p><a href="https://yarnpkg.com/lang/ja/docs/cli/link/">https://yarnpkg.com/lang/ja/docs/cli/link/</a></p>
-<p>Run <code>yarn link</code> in <code>@nekohack/j-stylebook</code>, set <code>@nekohack/j-stylebook</code> to the argument in <code>webneko-blog</code>.</p>
-<pre><code class="language-bash">yarn link @nekohack/j-stylebook
-</code></pre>
-<p>You can confirm by using <code>--progress</code> option and <code>--watch</code> option in <code>webpack4</code>.</p>
-<pre><code class="language-json">&quot;script&quot;:  {
-    &quot;watch&quot;: &quot;webpack --progress --config=webpack.config.js --watch&quot;,
-}
+<p>You can confirm the log <code>It is TypeScript!!</code>, it's OK!!</p>
+<pre><code class="language-bash">./node_modules/.bin/ts-node src/main.ts
+
+It is TypeScript!!
 </code></pre>
 
                     </main>
@@ -184,13 +175,13 @@ yarn -v
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="nodejs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="env.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="nodebrew.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="nodenv.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -202,13 +193,13 @@ yarn -v
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="nodejs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="env.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="nodebrew.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="nodenv.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
