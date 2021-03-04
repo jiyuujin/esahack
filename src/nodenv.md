@@ -20,9 +20,9 @@ Set the config at `.zshrc`
 sudo vi ~/.zshrc
 
 # ~/.zshrc
-export PATH="$HOME/.nodenv/bin:$PATH" >> ~/.bash_profile
+export PATH="$HOME/.nodenv/bin:$PATH" >> ~/.zshrc
 
-eval "$(nodenv init -)" >> ~/.bash_profile
+eval "$(nodenv init -)" >> ~/.zshrc
 
 source ~/.zshrc
 ```

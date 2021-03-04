@@ -6,6 +6,7 @@
     - [nodebrew Setup](nodebrew.md)
   - [PHP Setup](phpenv.md)
   - [Python Setup](pyenv.md)
+  - [Flutter Setup](flutter.md)
 - [Front](front.md)
   - [Build](build.md)
     - [Babel usage](babel.md)
