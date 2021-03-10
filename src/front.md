@@ -1,5 +1,6 @@
 # Front
 
+- [HTML Template](html.md)
 - [Build](build.md)
   - [Babel usage](babel.md)
   - [Webpack usage](webpack.md)

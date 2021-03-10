@@ -9,6 +9,7 @@
   - [Python Setup](pyenv.md)
   - [Flutter Setup](flutter.md)
 - [Front](front.md)
+  - [HTML Template](html.md)
   - [Build](build.md)
     - [Babel usage](babel.md)
     - [Webpack usage](webpack.md)
