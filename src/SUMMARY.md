@@ -8,6 +8,8 @@
   - [PHP Setup](phpenv.md)
   - [Python Setup](pyenv.md)
   - [Flutter Setup](flutter.md)
+- [DevOps](devops.md)
+  - [Renovate](renovate.md)
 - [Front](front.md)
   - [HTML Template](html.md)
   - [Build](build.md)
