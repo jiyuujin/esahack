@@ -9,6 +9,8 @@
   - [Python Setup](pyenv.md)
   - [Flutter Setup](flutter.md)
 - [DevOps](devops.md)
+  - [Slack](slack.md)
+  - [(Archived) Hangouts](hangouts.md)
   - [Renovate](renovate.md)
 - [Front](front.md)
   - [HTML Template](html.md)
