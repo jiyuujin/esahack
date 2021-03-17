@@ -207,60 +207,12 @@ export default window
 
 You can use `this.$asid` in components.
 
-### Composition API
-
-Also in Vue2.0, you can install [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) package.
-
-⚠️ It's good for you to install the plugin gradually before you update to Vue3.0
-
-```bash
-# @vue/composition-api
-yarn add @vue/composition-api
-```
-
-Import the plugin, and set `@/plugins/composition-api.ts` in Vue CLI.
-
-```ts
-import Vue from 'vue'
-import CompositionApi from '@vue/composition-api'
-
-Vue.use(CompositionApi)
-```
-
-You can write methods in `defineComponent`.
-
-```ts
-import { defineComponent, onMounted } from 'vue'
-
-export default defineComponent({
-    setup() {
-        onMounted() {
-            //
-        }
-        return {
-            //
-        }
-    }
-})
-```
-
-### Options API
-
-Use `Vue.extend` without specified plugins.
-
-```ts
-import Vue from 'vue'
-
-export default Vue.extend({
-    mounted() {
-        //
-    }
-})
-```
-
-### Others
+### Example
 
 Now, the Class and Decorator API aren't recommended.
+
+- [Options API](options_api.md)
+- [Composition API](composition_api.md)
 
 ## Use plugins
 

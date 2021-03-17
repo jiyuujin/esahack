@@ -21,6 +21,8 @@
     - [Rollup usage](rollup.md)
   - [Frameworks](frameworks.md)
     - [Vue usage](vue.md)
+      - [Options API](options_api.md)
+      - [Composition API](composition_api.md)
 - [Products](products.md)
   - [Yuma Kitamura - Web Developer](profile.md)
   - [nekohack Tech Hub](techhub.md)
