@@ -1,4 +1,4 @@
-# Node.js Setup
+# Node.js
 
 Forked in Node.js `1.x` to `3.x`, but has been released since `4.x`
 
@@ -57,3 +57,8 @@ You can confirm the log `It is TypeScript!!`, it's OK!!
 
 It is TypeScript!!
 ```
+
+## Manage Node.js
+
+- [nodenv](nodenv.md)
+- [nodebrew](nodebrew.md)

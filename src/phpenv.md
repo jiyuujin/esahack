@@ -1,4 +1,4 @@
-# PHP Setup
+# PHP
 
 ## Set `phpenv`
 

@@ -1,4 +1,4 @@
-# Flutter Setup
+# Flutter
 
 ## Prepare for the Flutter environment
 

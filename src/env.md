@@ -1,9 +1,10 @@
 # Environment
 
-- [Node.js Setup](nodejs.md)
-  - [nodenv Setup](nodenv.md)
-  - [nodebrew Setup](nodebrew.md)
-- [Rust Setup](rust.md)
-- [PHP Setup](phpenv.md)
-- [Python Setup](pyenv.md)
-- [Flutter Setup](flutter.md)
+- [Node.js](nodejs.md)
+  - [nodenv](nodenv.md)
+  - [nodebrew](nodebrew.md)
+- [Rust](rust.md)
+- [PHP](phpenv.md)
+- [Python](pyenv.md)
+- [MySQL](mysql.md)
+- [Flutter](flutter.md)

@@ -1,5 +1,6 @@
 # DevOps
 
+- [Docker](docker.md)
 - [Slack](slack.md)
-- [Hangouts](hangouts.md)
+- [(Archived) Hangouts](hangouts.md)
 - [Renovate](renovate.md)

@@ -1,4 +1,4 @@
-# Rust Setup
+# Rust
 
 ## Set `cargo`
 
