@@ -19,6 +19,7 @@
   - [Slack](slack.md)
   - [(Archived) Hangouts](hangouts.md)
   - [Renovate](renovate.md)
+  - [Squid](squid.md)
 - [Front](front.md)
   - [HTML Template](html.md)
   - [Build](build.md)
