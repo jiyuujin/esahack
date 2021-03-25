@@ -1,6 +1,7 @@
 # esahack
 
 - [Editors](editors.md)
+  - [JetBrains](jetbrains.md)
   - [Intellij](intellij.md)
     - [Node.js](nodejs.md)
     - [Dart](dart.md)
@@ -16,6 +17,7 @@
   - [Flutter](flutter.md)
 - [DevOps](devops.md)
   - [Docker](docker.md)
+  - [Remote](remote.md)
   - [Slack](slack.md)
   - [(Archived) Hangouts](hangouts.md)
   - [Renovate](renovate.md)
