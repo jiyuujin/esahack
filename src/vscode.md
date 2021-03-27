@@ -1,6 +1,14 @@
 # VSCode
 
-## Use Node.js
+## Install
+
+Install according to the instructions of the installation wizard　from [Download Visual Studio Code](https://code.visualstudio.com/download)
+
+## Use languages
+
+- [Dart](dart.md)
+
+### Use Node.js
 
 Search `setting.json` at [Code] - [Settings]
 

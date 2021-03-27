@@ -19,13 +19,13 @@ Install according to the instructions of the installation wizard　from [DOWNLOA
 
 ### Check license
 
-If you are using Windows, start `C: \ src \ flutterflutter_console.bat` and hit it there
+If you are using Windows, start `C:\src\flutterflutter_console.bat` and hit it there
 
 ```bash
 flutter doctor --android-licenses
 ```
 
-## Flutter Plugins
+### Install plugins
 
 When installing the Flutter plugin, you will be asked if you want to install the Dart plugin as well, so install it as well
 
@@ -60,3 +60,38 @@ You will be asked for the API level of the system image, so select `29 (Q)` and 
 Press `finish`
 
 ![](https://i.imgur.com/DEVlzLk.jpg)
+
+## Install VSCode
+
+Install according to the instructions of the installation wizard　from [Download Visual Studio Code](https://code.visualstudio.com/download). The SDK installation wizard appears at the first startup, but select Standard and install with the default settings
+
+### Check license
+
+If you are using Windows, start `C:\src\flutterflutter_console.bat` and hit it there
+
+```bash
+flutter doctor --android-licenses
+```
+
+### Install plugins
+
+When installing the Flutter plugin, you will be asked if you want to install the Dart plugin as well, so install it as well
+
+Search for `flutter` in the search box, select the Flutter plugin provided by the official flutter.io and press Install to install the Flutter
+
+![](https://i.imgur.com/XbfWT6W.jpg)
+
+Also search for Dart plugins
+
+![](https://i.imgur.com/tEcypad.jpg)
+
+Confirm languages
+
+- Swift
+- Kotlin
+
+![](https://i.imgur.com/wWraX9v.jpg)
+
+Press `No device` to start AVD Manager, and select AVD manager
+
+![](https://i.imgur.com/jhsoa5d.jpg)
