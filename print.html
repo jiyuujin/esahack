@@ -168,16 +168,22 @@
 </li>
 </ul>
 <h1><a class="header" href="#intellij-idea" id="intellij-idea">IntelliJ IDEA</a></h1>
+<h2><a class="header" href="#install" id="install">Install</a></h2>
+<p>Install according to the instructions of the installation wizard　from <a href="https://www.jetbrains.com/ja-jp/idea/download/#section=mac">DOWNLOAD INTELLIJ IDEA</a></p>
+<h2><a class="header" href="#use-languages" id="use-languages">Use languages</a></h2>
+<ul>
+<li><a href="dart.html">Dart</a></li>
+</ul>
+<h3><a class="header" href="#use-nodejs" id="use-nodejs">Use Node.js</a></h3>
 <p>Search <code>eslint</code> at [Preference]</p>
 <ul>
 <li>Enable at [Languages &amp; Frameworks] - [JavaScript] &gt; [Code Quality Tools] &gt; [ESLint]</li>
 <li>Apply each path using at <code>Node interpreter</code>, <code>ESLint package</code></li>
 <li>To use <code>File Watcher</code>, search <code>File Watcher</code> at [Preference]</li>
 </ul>
-<h2><a class="header" href="#use-languages" id="use-languages">Use languages</a></h2>
-<ul>
-<li><a href="dart.html">Dart</a></li>
-</ul>
+<h2><a class="header" href="#others" id="others">Others</a></h2>
+<h3><a class="header" href="#android-studio" id="android-studio">Android Studio</a></h3>
+<p>Install according to the instructions of the installation wizard　from <a href="https://developer.android.com/studio/?hl=ja">DOWNLOAD ANDROID STUDIO</a></p>
 <h1><a class="header" href="#nodejs" id="nodejs">Node.js</a></h1>
 <p>Forked in Node.js <code>1.x</code> to <code>3.x</code>, but has been released since <code>4.x</code></p>
 <p><a href="https://nodejs.org/ja/download/releases/">https://nodejs.org/ja/download/releases/</a></p>
@@ -234,7 +240,13 @@ include: package:pedantic_mono/analysis_options.yaml
 include: package:pedantic_mono/analysis_options_flutter_samples.yaml
 </code></pre>
 <h1><a class="header" href="#vscode" id="vscode">VSCode</a></h1>
-<h2><a class="header" href="#use-nodejs" id="use-nodejs">Use Node.js</a></h2>
+<h2><a class="header" href="#install-1" id="install-1">Install</a></h2>
+<p>Install according to the instructions of the installation wizard　from <a href="https://code.visualstudio.com/download">Download Visual Studio Code</a></p>
+<h2><a class="header" href="#use-languages-1" id="use-languages-1">Use languages</a></h2>
+<ul>
+<li><a href="dart.html">Dart</a></li>
+</ul>
+<h3><a class="header" href="#use-nodejs-1" id="use-nodejs-1">Use Node.js</a></h3>
 <p>Search <code>setting.json</code> at [Code] - [Settings]</p>
 <ul>
 <li>Apply prettier when run <code>eslint</code></li>
@@ -498,10 +510,10 @@ source ~/.zshrc
 <h2><a class="header" href="#install-android-studio" id="install-android-studio">Install Android Studio</a></h2>
 <p>Install according to the instructions of the installation wizard　from <a href="https://developer.android.com/studio/?hl=ja">DOWNLOAD ANDROID STUDIO</a>. The SDK installation wizard appears at the first startup, but select Standard and install with the default settings</p>
 <h3><a class="header" href="#check-license" id="check-license">Check license</a></h3>
-<p>If you are using Windows, start <code>C: \ src \ flutterflutter_console.bat</code> and hit it there</p>
+<p>If you are using Windows, start <code>C:\src\flutterflutter_console.bat</code> and hit it there</p>
 <pre><code class="language-bash">flutter doctor --android-licenses
 </code></pre>
-<h2><a class="header" href="#flutter-plugins" id="flutter-plugins">Flutter Plugins</a></h2>
+<h3><a class="header" href="#install-plugins" id="install-plugins">Install plugins</a></h3>
 <p>When installing the Flutter plugin, you will be asked if you want to install the Dart plugin as well, so install it as well</p>
 <p>Start Android Studio. The SDK installation wizard appears at the first startup, but select Standard. Install with default settings Start Android Studio</p>
 <p><img src="https://i.imgur.com/1Eqwm4n.jpg" alt="" /></p>
@@ -519,6 +531,26 @@ source ~/.zshrc
 <p><img src="https://i.imgur.com/fQDeoIp.jpg" alt="" /></p>
 <p>Press <code>finish</code></p>
 <p><img src="https://i.imgur.com/DEVlzLk.jpg" alt="" /></p>
+<h2><a class="header" href="#install-vscode" id="install-vscode">Install VSCode</a></h2>
+<p>Install according to the instructions of the installation wizard　from <a href="https://code.visualstudio.com/download">Download Visual Studio Code</a>. The SDK installation wizard appears at the first startup, but select Standard and install with the default settings</p>
+<h3><a class="header" href="#check-license-1" id="check-license-1">Check license</a></h3>
+<p>If you are using Windows, start <code>C:\src\flutterflutter_console.bat</code> and hit it there</p>
+<pre><code class="language-bash">flutter doctor --android-licenses
+</code></pre>
+<h3><a class="header" href="#install-plugins-1" id="install-plugins-1">Install plugins</a></h3>
+<p>When installing the Flutter plugin, you will be asked if you want to install the Dart plugin as well, so install it as well</p>
+<p>Search for <code>flutter</code> in the search box, select the Flutter plugin provided by the official flutter.io and press Install to install the Flutter</p>
+<p><img src="https://i.imgur.com/XbfWT6W.jpg" alt="" /></p>
+<p>Also search for Dart plugins</p>
+<p><img src="https://i.imgur.com/tEcypad.jpg" alt="" /></p>
+<p>Confirm languages</p>
+<ul>
+<li>Swift</li>
+<li>Kotlin</li>
+</ul>
+<p><img src="https://i.imgur.com/wWraX9v.jpg" alt="" /></p>
+<p>Press <code>No device</code> to start AVD Manager, and select AVD manager</p>
+<p><img src="https://i.imgur.com/jhsoa5d.jpg" alt="" /></p>
 <h1><a class="header" href="#devops" id="devops">DevOps</a></h1>
 <ul>
 <li><a href="docker.html">Docker</a></li>
