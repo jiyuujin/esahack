@@ -5,6 +5,7 @@
   - [nodebrew](nodebrew.md)
 - [Rust](rust.md)
 - [PHP](phpenv.md)
+- [Go](golang.md)
 - [Python](pyenv.md)
 - [MySQL](mysql.md)
 - [Flutter](flutter.md)
