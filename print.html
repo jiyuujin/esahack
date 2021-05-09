@@ -437,18 +437,22 @@ cd phpenv/bin
 ./phpenv-install.sh
 </code></pre>
 <p>Set the config at <code>.bash_profile</code></p>
-<pre><code class="language-bash">export PATH=&quot;$HOME/.phpenv/bin:$PATH&quot;
+<pre><code class="language-bash">sudo vi ~/.bash_profile
+
+export PATH=&quot;$HOME/.phpenv/bin:$PATH&quot;
 eval &quot;$(phpenv init -)&quot;
+
+source ~/.bash_profile
 </code></pre>
-<h2><a class="header" href="#install-php" id="install-php">Install <code>PHP</code></a></h2>
-<p>It's hard to use PHP</p>
+<p>It's hard to use PHP and you will install <code>re2c</code>, <code>libmcrypt</code>, <code>libxml2</code>, <code>autoconf</code>, and <code>automake</code></p>
 <pre><code class="language-bash">brew search bison
 echo 'export PATH=&quot;/usr/local/opt/bison@2.7/bin:$PATH&quot;'
 
 brew install libxml2
 echo 'export PATH=&quot;/usr/local/opt/libxml2/bin:$PATH&quot;'
 </code></pre>
-<p>Others, <code>re2c</code>, <code>libmcrypt</code>, <code>libxml2</code>, <code>autoconf</code>, and <code>automake</code></p>
+<p>After setting, quit the terminal session</p>
+<p>List of <code>PHP</code> versions that can be installed</p>
 <pre><code class="language-bash">phpenv install --list
 phpenv install 7.2.13
 phpenv global 7.2.13
@@ -461,19 +465,34 @@ php -v
 composer --version
 </code></pre>
 <h1><a class="header" href="#go" id="go">Go</a></h1>
-<h2><a class="header" href="#installation" id="installation">Installation</a></h2>
-<p>Use HomeBrew</p>
-<pre><code class="language-bash">brew install go
+<h2><a class="header" href="#set-goenv" id="set-goenv">Set <code>goenv</code></a></h2>
+<pre><code class="language-bash">brew install goenv
 </code></pre>
 <p>Set the config at <code>.zshrc</code></p>
 <pre><code class="language-bash">sudo vi ~/.zshrc
 
-# ~/.zshrc
-export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
 
 source ~/.zshrc
+</code></pre>
+<p>Pass the path to use <code>goenv</code></p>
+<pre><code class="language-bash">sudo vi ~/.zshrc
+
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+export PATH=$HOME/.goenv/bin:$PATH
+eval &quot;$(goenv init -)&quot;
+
+source ~/.zshrc
+</code></pre>
+<p>After setting, quit the terminal session</p>
+<p>List of <code>Go</code> versions that can be installed</p>
+<pre><code class="language-bash">goenv install -l
+goenv install 1.11.4
+goenv global 1.11.4
+goenv rehash
+go version
 </code></pre>
 <h2><a class="header" href="#run-go-simplify" id="run-go-simplify">Run Go simplify</a></h2>
 <p><a href="https://golang.org/pkg/fmt/">Package fmt</a> is an input / output package</p>
@@ -503,6 +522,7 @@ fi
 source ~/.zshrc
 </code></pre>
 <p>After setting, quit the terminal session</p>
+<p>List of <code>Python</code> versions that can be installed</p>
 <pre><code class="language-bash">pyenv install -l
 pyenv install 3.9.1
 pyenv global 3.9.1
@@ -1667,7 +1687,7 @@ export default defineComponent({
 <li><a href="firebase_hosting.html">Firebase hosting</a></li>
 </ul>
 <h1><a class="header" href="#firebase-hosting" id="firebase-hosting">Firebase hosting</a></h1>
-<h2><a class="header" href="#installation-1" id="installation-1">Installation</a></h2>
+<h2><a class="header" href="#installation" id="installation">Installation</a></h2>
 <p>Deploy the website created by Flutter for Web</p>
 <pre><code class="language-bash">firebase init hosting
 

@@ -140,18 +140,22 @@ cd phpenv/bin
 ./phpenv-install.sh
 </code></pre>
 <p>Set the config at <code>.bash_profile</code></p>
-<pre><code class="language-bash">export PATH=&quot;$HOME/.phpenv/bin:$PATH&quot;
+<pre><code class="language-bash">sudo vi ~/.bash_profile
+
+export PATH=&quot;$HOME/.phpenv/bin:$PATH&quot;
 eval &quot;$(phpenv init -)&quot;
+
+source ~/.bash_profile
 </code></pre>
-<h2><a class="header" href="#install-php" id="install-php">Install <code>PHP</code></a></h2>
-<p>It's hard to use PHP</p>
+<p>It's hard to use PHP and you will install <code>re2c</code>, <code>libmcrypt</code>, <code>libxml2</code>, <code>autoconf</code>, and <code>automake</code></p>
 <pre><code class="language-bash">brew search bison
 echo 'export PATH=&quot;/usr/local/opt/bison@2.7/bin:$PATH&quot;'
 
 brew install libxml2
 echo 'export PATH=&quot;/usr/local/opt/libxml2/bin:$PATH&quot;'
 </code></pre>
-<p>Others, <code>re2c</code>, <code>libmcrypt</code>, <code>libxml2</code>, <code>autoconf</code>, and <code>automake</code></p>
+<p>After setting, quit the terminal session</p>
+<p>List of <code>PHP</code> versions that can be installed</p>
 <pre><code class="language-bash">phpenv install --list
 phpenv install 7.2.13
 phpenv global 7.2.13

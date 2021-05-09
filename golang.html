@@ -133,19 +133,34 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#go" id="go">Go</a></h1>
-<h2><a class="header" href="#installation" id="installation">Installation</a></h2>
-<p>Use HomeBrew</p>
-<pre><code class="language-bash">brew install go
+<h2><a class="header" href="#set-goenv" id="set-goenv">Set <code>goenv</code></a></h2>
+<pre><code class="language-bash">brew install goenv
 </code></pre>
 <p>Set the config at <code>.zshrc</code></p>
 <pre><code class="language-bash">sudo vi ~/.zshrc
 
-# ~/.zshrc
-export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
 
 source ~/.zshrc
+</code></pre>
+<p>Pass the path to use <code>goenv</code></p>
+<pre><code class="language-bash">sudo vi ~/.zshrc
+
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+export PATH=$HOME/.goenv/bin:$PATH
+eval &quot;$(goenv init -)&quot;
+
+source ~/.zshrc
+</code></pre>
+<p>After setting, quit the terminal session</p>
+<p>List of <code>Go</code> versions that can be installed</p>
+<pre><code class="language-bash">goenv install -l
+goenv install 1.11.4
+goenv global 1.11.4
+goenv rehash
+go version
 </code></pre>
 <h2><a class="header" href="#run-go-simplify" id="run-go-simplify">Run Go simplify</a></h2>
 <p><a href="https://golang.org/pkg/fmt/">Package fmt</a> is an input / output package</p>
