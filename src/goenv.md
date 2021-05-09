@@ -2,6 +2,8 @@
 
 ## Set `goenv`
 
+Please install `goenv` using Homebrew
+
 ```bash
 brew install goenv
 ```
