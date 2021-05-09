@@ -12,13 +12,15 @@ cd phpenv/bin
 Set the config at `.bash_profile`
 
 ```bash
+sudo vi ~/.bash_profile
+
 export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init -)"
+
+source ~/.bash_profile
 ```
 
-## Install `PHP`
-
-It's hard to use PHP
+It's hard to use PHP and you will install `re2c`, `libmcrypt`, `libxml2`, `autoconf`, and `automake`
 
 ```bash
 brew search bison
@@ -28,7 +30,9 @@ brew install libxml2
 echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"'
 ```
 
-Others, `re2c`, `libmcrypt`, `libxml2`, `autoconf`, and `automake`
+After setting, quit the terminal session
+
+List of `PHP` versions that can be installed
 
 ```bash
 phpenv install --list

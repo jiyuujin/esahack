@@ -25,6 +25,8 @@ source ~/.zshrc
 
 After setting, quit the terminal session
 
+List of `Python` versions that can be installed
+
 ```bash
 pyenv install -l
 pyenv install 3.9.1
