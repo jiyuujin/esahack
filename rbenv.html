@@ -158,6 +158,34 @@ rbenv global 3.0.1
 rbenv rehash
 ruby -v
 </code></pre>
+<h2><a class="header" href="#install-bundler" id="install-bundler">Install bundler</a></h2>
+<p>Confirm the <code>bundler</code> version</p>
+<pre><code class="language-bash">bundler -v
+</code></pre>
+<h3><a class="header" href="#install-postgresql" id="install-postgresql">Install PostgreSQL</a></h3>
+<p>Install PostgreSQL</p>
+<pre><code class="language-bash">brew install postgresql
+</code></pre>
+<h2><a class="header" href="#rails-setup" id="rails-setup">Rails setup</a></h2>
+<p>I couldn't install it properly without the following steps</p>
+<pre><code class="language-bash">gem install rake
+</code></pre>
+<p><a href="https://github.com/rails/rails/issues/41757#issuecomment-808362531">New mimetic version licensed under MIT #41757</a></p>
+<pre><code class="language-bash">brew install shared-mime-info
+update-mime-database /usr/local/share/mime
+</code></pre>
+<p>Install Rails, create the skeleton of your Rails app</p>
+<pre><code class="language-bash">gem install rails -v 5.2.3
+rails _5.2.3_ new . -d postgresql --skip-bundle
+</code></pre>
+<h3><a class="header" href="#start-at-rails" id="start-at-rails">Start at Rails</a></h3>
+<p>Install various <code>gems</code></p>
+<pre><code class="language-bash">bundle install --path vendor/bundle
+</code></pre>
+<p>Start <a href="http://localhost:3000">http://localhost:3000</a> with PostgreSQL</p>
+<pre><code class="language-bash">brew services start postgresql
+rails s
+</code></pre>
 
                     </main>
 
