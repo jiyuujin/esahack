@@ -1,8 +1,6 @@
 # Flutter
 
-## Prepare for the Flutter environment
-
-Set the config at `.zshrc`
+Set the config at `.zshrc` to prepare for the environment
 
 ```bash
 sudo vi ~/.zshrc
@@ -13,11 +11,16 @@ export PATH="$PATH:/Users/<User名に置き換える>/project/flutter/bin"
 source ~/.zshrc
 ```
 
-## Install Android Studio
+## Install editors
+
+- Android Studio
+- VSCode
+
+### Install Android Studio
 
 Install according to the instructions of the installation wizard　from [DOWNLOAD ANDROID STUDIO](https://developer.android.com/studio/?hl=ja). The SDK installation wizard appears at the first startup, but select Standard and install with the default settings
 
-### Check license
+#### Check license
 
 If you are using Windows, start `C:\src\flutterflutter_console.bat` and hit it there
 
@@ -25,7 +28,7 @@ If you are using Windows, start `C:\src\flutterflutter_console.bat` and hit it t
 flutter doctor --android-licenses
 ```
 
-### Install plugins
+#### Install plugins
 
 When installing the Flutter plugin, you will be asked if you want to install the Dart plugin as well, so install it as well
 
@@ -61,11 +64,11 @@ Press `finish`
 
 ![](https://i.imgur.com/DEVlzLk.jpg)
 
-## Install VSCode
+### Install VSCode
 
 Install according to the instructions of the installation wizard　from [Download Visual Studio Code](https://code.visualstudio.com/download). The SDK installation wizard appears at the first startup, but select Standard and install with the default settings
 
-### Check license
+#### Check license
 
 If you are using Windows, start `C:\src\flutterflutter_console.bat` and hit it there
 
@@ -95,3 +98,31 @@ Confirm languages
 Press `No device` to start AVD Manager, and select AVD manager
 
 ![](https://i.imgur.com/jhsoa5d.jpg)
+
+## Create desktop applications
+
+Install Flutter with platform such as Windows, macOS and Linux
+
+```bash
+flutter create --platforms=windows,macos,linux .
+```
+
+### Run applications
+
+Start from the command on macOS
+
+```bash
+flutter run -d macos
+```
+
+### Build for release
+
+Build the app for release
+
+```bash
+flutter build macos
+```
+
+## Reference
+
+[Add desktop support to an existing Flutter app](https://flutter.dev/desktop#add-desktop-support-to-an-existing-flutter-app)
