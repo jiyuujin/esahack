@@ -133,8 +133,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#flutter" id="flutter">Flutter</a></h1>
-<h2><a class="header" href="#prepare-for-the-flutter-environment" id="prepare-for-the-flutter-environment">Prepare for the Flutter environment</a></h2>
-<p>Set the config at <code>.zshrc</code></p>
+<p>Set the config at <code>.zshrc</code> to prepare for the environment</p>
 <pre><code class="language-bash">sudo vi ~/.zshrc
 
 # ~/.zshrc
@@ -142,13 +141,18 @@ export PATH=&quot;$PATH:/Users/&lt;User名に置き換える&gt;/project/flutter
 
 source ~/.zshrc
 </code></pre>
-<h2><a class="header" href="#install-android-studio" id="install-android-studio">Install Android Studio</a></h2>
+<h2><a class="header" href="#install-editors" id="install-editors">Install editors</a></h2>
+<ul>
+<li>Android Studio</li>
+<li>VSCode</li>
+</ul>
+<h3><a class="header" href="#install-android-studio" id="install-android-studio">Install Android Studio</a></h3>
 <p>Install according to the instructions of the installation wizard　from <a href="https://developer.android.com/studio/?hl=ja">DOWNLOAD ANDROID STUDIO</a>. The SDK installation wizard appears at the first startup, but select Standard and install with the default settings</p>
-<h3><a class="header" href="#check-license" id="check-license">Check license</a></h3>
+<h4><a class="header" href="#check-license" id="check-license">Check license</a></h4>
 <p>If you are using Windows, start <code>C:\src\flutterflutter_console.bat</code> and hit it there</p>
 <pre><code class="language-bash">flutter doctor --android-licenses
 </code></pre>
-<h3><a class="header" href="#install-plugins" id="install-plugins">Install plugins</a></h3>
+<h4><a class="header" href="#install-plugins" id="install-plugins">Install plugins</a></h4>
 <p>When installing the Flutter plugin, you will be asked if you want to install the Dart plugin as well, so install it as well</p>
 <p>Start Android Studio. The SDK installation wizard appears at the first startup, but select Standard. Install with default settings Start Android Studio</p>
 <p><img src="https://i.imgur.com/1Eqwm4n.jpg" alt="" /></p>
@@ -166,9 +170,9 @@ source ~/.zshrc
 <p><img src="https://i.imgur.com/fQDeoIp.jpg" alt="" /></p>
 <p>Press <code>finish</code></p>
 <p><img src="https://i.imgur.com/DEVlzLk.jpg" alt="" /></p>
-<h2><a class="header" href="#install-vscode" id="install-vscode">Install VSCode</a></h2>
+<h3><a class="header" href="#install-vscode" id="install-vscode">Install VSCode</a></h3>
 <p>Install according to the instructions of the installation wizard　from <a href="https://code.visualstudio.com/download">Download Visual Studio Code</a>. The SDK installation wizard appears at the first startup, but select Standard and install with the default settings</p>
-<h3><a class="header" href="#check-license-1" id="check-license-1">Check license</a></h3>
+<h4><a class="header" href="#check-license-1" id="check-license-1">Check license</a></h4>
 <p>If you are using Windows, start <code>C:\src\flutterflutter_console.bat</code> and hit it there</p>
 <pre><code class="language-bash">flutter doctor --android-licenses
 </code></pre>
@@ -186,6 +190,20 @@ source ~/.zshrc
 <p><img src="https://i.imgur.com/wWraX9v.jpg" alt="" /></p>
 <p>Press <code>No device</code> to start AVD Manager, and select AVD manager</p>
 <p><img src="https://i.imgur.com/jhsoa5d.jpg" alt="" /></p>
+<h2><a class="header" href="#create-desktop-applications" id="create-desktop-applications">Create desktop applications</a></h2>
+<p>Install Flutter with platform such as Windows, macOS and Linux</p>
+<pre><code class="language-bash">flutter create --platforms=windows,macos,linux .
+</code></pre>
+<h3><a class="header" href="#run-applications" id="run-applications">Run applications</a></h3>
+<p>Start from the command on macOS</p>
+<pre><code class="language-bash">flutter run -d macos
+</code></pre>
+<h3><a class="header" href="#build-for-release" id="build-for-release">Build for release</a></h3>
+<p>Build the app for release</p>
+<pre><code class="language-bash">flutter build macos
+</code></pre>
+<h2><a class="header" href="#reference" id="reference">Reference</a></h2>
+<p><a href="https://flutter.dev/desktop#add-desktop-support-to-an-existing-flutter-app">Add desktop support to an existing Flutter app</a></p>
 
                     </main>
 
