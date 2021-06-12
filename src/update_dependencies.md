@@ -1,4 +1,9 @@
-# Renovate
+# Update dependencies
+
+- Renovate
+- Dependabot
+
+## Renovate
 
 Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-config) to standardize settings
 
@@ -10,9 +15,9 @@ Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-co
 }
 ```
 
-## Setting List
+### Various notations
 
-### Label with Pull Request
+List in order from Label with Pull Request
 
 ```json
 {
@@ -23,7 +28,7 @@ Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-co
 }
 ```
 
-### Combine monorepo into one Pull Request
+#### Combine monorepo into one Pull Request
 
 ```json
 {
@@ -34,7 +39,7 @@ Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-co
 }
 ```
 
-### Combine minor and patch into one Pull Request
+#### Combine minor and patch into one Pull Request
 
 ```json
 {
@@ -47,7 +52,7 @@ Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-co
 }
 ```
 
-### Give dependent libraries version width
+#### Give dependent libraries version width
 
 ```json
 {
@@ -58,7 +63,7 @@ Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-co
 }
 ```
 
-### Combine lint into one Pull Request
+#### Combine lint into one Pull Request
 
 ```json
 {
@@ -80,7 +85,7 @@ Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-co
 }
 ```
 
-### Stop automatic updates of `.node-version`
+#### Stop automatic updates of `.node-version`
 
 [https://github.com/renovatebot/config-help/issues/81](https://github.com/renovatebot/config-help/issues/81)
 
@@ -96,3 +101,5 @@ Create a dedicated renovate [repository](https://github.com/jiyuujin/renovate-co
   ]
 }
 ```
+
+## Dependabot
