@@ -12,7 +12,7 @@ yarn add @vue/composition-api
 Import the plugin, and set `@/plugins/composition-api.ts` in Vue CLI.
 
 ```ts
-import Vue from 'vue'
+import Vue from 'src/vue'
 import CompositionApi from '@vue/composition-api'
 
 Vue.use(CompositionApi)

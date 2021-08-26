@@ -11,7 +11,7 @@ yarn add vue-cookie-law
 You create the original component for `vue-cookie-law`
 
 ```ts
-import CookieLaw from 'vue-cookie-law'
+import CookieLaw from 'src/en/vue-cookie-law'
 
 export default Vue.extend({
   components: {

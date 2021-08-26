@@ -7,9 +7,9 @@
 You use `@fortawesome/fontawesome-svg-core` in [Vue CLI](https://cli.vuejs.org/)
 
 ```ts
-import Vue from 'vue'
+import Vue from 'src/en/vue'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import {library} from '@fortawesome/fontawesome-svg-core'
 
 // Regular, Light, and Brands are existed
 import {

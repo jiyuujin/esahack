@@ -21,7 +21,7 @@ Also not bad, but
 
 ```ts
 // @ts-ignore
-import ImageLightbox from 'vue-image-lightbox'
+import ImageLightbox from 'src/en/vue-image-lightbox'
 ```
 
 Set the original type definition, you need to set the original type definition

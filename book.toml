@@ -2,5 +2,5 @@
 title = "esahack"
 src = "src"
 authors = ["jiyuujin"]
-multilingual = false
+multilingual = true
 language = "en"

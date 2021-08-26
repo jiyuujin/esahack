@@ -50,7 +50,7 @@ Don't forget change the type definition in `shims-vue.d.ts`.
 
 ```ts
 declare module '*.vue' {
-  import { ComponentOptions } from 'vue'
+  import {ComponentOptions} from 'src/en/vue'
   const component: ComponentOptions
   export default component
 }
@@ -61,22 +61,22 @@ declare module '*.vue' {
 At first, you must create an entry point.
 
 ```ts
-import Vue from 'vue'
+import Vue from 'src/en/vue'
 import App from './App.vue'
 
 // use `vue-router`
 import router from './router'
 
 const vm = new Vue({
-    render: h => h(App),
-    router,
+  render: h => h(App),
+  router,
 }).$mount('#app')
 ```
 
 If necessary use `vue-router`
 
 ```ts
-import Vue from 'vue'
+import Vue from 'src/en/vue'
 import Router from 'vue-router'
 
 import HelloWorld from '../components/HelloWorld'
@@ -101,11 +101,11 @@ export default new Router({
 If necessary use `vuex`, you must not use `vuex` and `Vue.observable` as much as possible.
 
 ```ts
-import Vue from 'vue'
-import Vuex, { StoreOptions } from 'vuex'
+import Vue from 'src/en/vue'
+import Vuex, {StoreOptions} from 'vuex'
 
 // Modules
-import { product } from './product'
+import {product} from './product'
 
 Vue.use(Vuex)
 
@@ -182,7 +182,7 @@ You can confirm the type definition in `shims-vue.d.ts`.
 
 ```ts
 declare module '*.vue' {
-  import Vue from 'vue'
+  import Vue from 'src/en/vue'
   export default Vue
 }
 ```
@@ -211,15 +211,15 @@ You can use `this.$asid` in components.
 
 Now, the Class and Decorator API aren't recommended.
 
-- [Options API](options_api.md)
-- [Composition API](composition_api.md)
+- [Options API](en/options_api.md)
+- [Composition API](en/composition_api.md)
 
 ## Use plugins
 
 Let's use what you can.
 
-- [axios](axios.md)
-- [sanitize-html](sanitize-html.md)
+- [axios](en/axios.md)
+- [sanitize-html](en/sanitize-html.md)
 - [vue-cookie-law](vue-cookie-law.md)
 - [vue-datetimerange-picker](vue-datetimerange-picker.md)
 - [vue-fontawesome](vue-fontawesome.md)

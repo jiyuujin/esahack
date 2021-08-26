@@ -11,8 +11,8 @@ yarn add vue-datetimerange-picker
 You can use as general CSS frameworks
 
 ```js
-import Vue from 'vue'
-import { CoreUI } from 'vue-datetimerange-picker'
+import Vue from 'src/en/vue'
+import {CoreUI} from 'src/en/vue-datetimerange-picker'
 import 'vue-datetimerange-picker/dist/vue-range-picker.css'
 
 Vue.use(CoreUI)

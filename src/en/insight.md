@@ -6,9 +6,9 @@ A website established to calculate the performance of each website that it opera
 
 ### Target websites
 
-- [Profile](./profile.md)
-- [Tech Hub](./techhub.md)
-- [Blog](./blog.md)
+- [Profile](profile.md)
+- [Tech Hub](techhub.md)
+- [Blog](blog.md)
 
 ## Technology stacks that make up the site
 

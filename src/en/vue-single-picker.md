@@ -11,8 +11,8 @@ yarn add vue-single-picker
 You can use as general CSS frameworks
 
 ```js
-import Vue from 'vue'
-import { CoreUI } from 'vue-single-picker'
+import Vue from 'src/en/vue'
+import {CoreUI} from 'src/en/vue-single-picker'
 import 'vue-single-picker/dist/vue-single-picker.css'
 
 Vue.use(CoreUI)

@@ -5,7 +5,7 @@ Install [axios](https://www.npmjs.com/package/axios) package.
 You use `axios` in [Vue CLI](https://cli.vuejs.org/)
 
 ```ts
-import { AxiosInstance } from 'axios'
+import {AxiosInstance} from 'src/en/axios'
 
 declare module 'vue/types/vue' {
   interface Vue {
@@ -18,7 +18,7 @@ You set the environment variable in `.env`
 
 ```ts
 import _Vue from 'client/src/contents/vue'
-import axios from 'axios'
+import axios from 'src/en/axios'
 
 export default {
   install(Vue: typeof _Vue): void {
