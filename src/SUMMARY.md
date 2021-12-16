@@ -46,8 +46,3 @@
 - [Infra](en/infra.md)
   - [Hosting](en/hosting.md)
     - [Firebase hosting](en/firebase_hosting.md)
-- [Products](en/products.md)
-  - [Yuma Kitamura - Web Developer](en/profile.md)
-  - [nekohack Tech Hub](en/techhub.md)
-  - [Web猫ブログ](en/blog.md)
-  - [Insight](en/insight.md)
