@@ -30,7 +30,7 @@
     - [Webpack usage](en/webpack.md)
     - [Parcel usage](en/parcel.md)
     - [Rollup usage](en/rollup.md)
-  - [Plugins](en/plugins.md)
+  - [Plugins](en/plugins.md) (翻訳未対応)
     - [axios](en/axios.md)
     - [sanitize-html](en/sanitize-html.md)
     - [vue-cookie-law](en/vue-cookie-law.md)
