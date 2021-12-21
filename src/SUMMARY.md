@@ -18,7 +18,7 @@
     - [Go](en/goenv.md)
 - [DevOps](en/devops.md)
   - [Docker](en/docker.md)
-    - [MySQL](mysql_on_docker.md)
+    - [MySQL](en/mysql_on_docker.md)
     - [MongoDB](en/mongodb_on_docker.md)
   - [Communication](en/communication.md)
   - [Update dependencies](en/update_dependencies.md)
